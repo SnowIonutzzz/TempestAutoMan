@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+   <link rel="stylesheet" href="css/jquery.e-calendar.css">
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+   <script src="js/jquery.e-calendar.js"></script>
+</head>
+<body>
+   <div id="calendar"></div>
+    <script>
+      $(document).ready(function () {
+         $('#calendar').eCalendar({
+         weekDays: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+         months: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+         textArrows: {previous: '<', next: '>'},
+         eventTitle: 'Events',
+         url: 'www.gsp.ro',
+         events: [
+           {title: 'Event 2', description: 'Description 2', datetime: new Date(2014, 7, 14, 16)},
+           {title: 'Event 3', description: 'jQueryScript.Net', datetime: new Date(2014, 7, 10, 16)},
+           {title: 'Event 1', description: 'jQueryScript.Net', datetime: new Date(2015, 7, 16, 16)}
+         ]});
+         });
+  </script>
+</body>
