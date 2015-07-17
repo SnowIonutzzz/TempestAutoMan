@@ -64,9 +64,9 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => '',
-	'password' => '',
+	'hostname' => 'www.identificarepiese.ro',
+	'username' => 'ionut',
+	'password' => 'ionutfarcas',
 	'database' => '',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
